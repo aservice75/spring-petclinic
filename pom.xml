@@ -158,15 +158,12 @@
             <phase>validate</phase>
             <configuration>
             <skip>true</skip> <!--Skip the checkstyle -->
-            <configLocation>src/checkstyle/nohttp-checkstyle.xml<
-            /configLocation>
-            <suppressionsLocation>src/checkstyle/nohttp-checkstylesuppressions.
-            xml</suppressionsLocation>
+            <configLocation>src/checkstyle/nohttp-checkstyle.xml</configLocation>
+            <suppressionsLocation>src/checkstyle/nohttp-checkstylesuppressions.xml</suppressionsLocation>
             <encoding>UTF-8</encoding>
             <sourceDirectories>${basedir}</sourceDirectories>
             <includes>**/*</includes>
-            <excludes>**/.git/**/*,**/.idea/**/*,**/target/**/,**/.
-            flattened-pom.xml,**/*.class</excludes>
+            <excludes>**/.git/**/*,**/.idea/**/*,**/target/**/,**/.flattened-pom.xml,**/*.class</excludes>
             </configuration>
             <goals>
               <goal>check</goal>
